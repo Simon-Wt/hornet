@@ -20,10 +20,7 @@
       "/api/plugins/participation/outputs*",
       "/api/plugins/participation/addresses*"
     ],
-    "protectedRoutes": [
-      "/api/v1/*",
-      "/api/plugins/*"
-    ],
+    "protectedRoutes": ["/api/v1/*", "/api/plugins/*"],
     "powEnabled": true,
     "powWorkerCount": 1,
     "limits": {
@@ -163,15 +160,10 @@
     "alias": "HORNET mainnet node",
     "profile": "auto",
     "disablePlugins": [],
-    "enablePlugins": [
-      "Spammer"
-    ]
+    "enablePlugins": ["Spammer", "Participation"]
   },
   "p2p": {
-    "bindMultiAddresses": [
-      "/ip4/0.0.0.0/tcp/15600",
-      "/ip6/::/tcp/15600"
-    ],
+    "bindMultiAddresses": ["/ip4/0.0.0.0/tcp/15600", "/ip6/::/tcp/15600"],
     "connectionManager": {
       "highWatermark": 10,
       "lowWatermark": 5
@@ -201,9 +193,7 @@
     "level": "info",
     "disableCaller": true,
     "encoding": "console",
-    "outputPaths": [
-      "stdout"
-    ]
+    "outputPaths": ["stdout"]
   },
   "warpsync": {
     "advancementRange": 150
